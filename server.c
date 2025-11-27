@@ -17,6 +17,7 @@ void    action(int signal, siginfo_t *info, void *context)
         g_var.bit_counter = 0;
         g_var.chr = 0;
     }
+    kill(info->si_pid, SIGUSR1);
 }
 int main(void)
 {
