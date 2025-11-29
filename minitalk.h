@@ -12,4 +12,7 @@ typedef struct s_server
     unsigned char chr;
 }   t_server;
 
+int ft_basamak(char *s);
+int	ft_atoi(const char *nptr);
+
 #endif

@@ -24,19 +24,34 @@ void    send_char(int pid, char c)
         bit_index--;
     }
 }
+int     pid_controller(char *s)
+{
+    int basamak;
+    int pid;
+
+    basamak = ft_basamak(s);
+    if(basamak > 8)
+    {
+        write(2, "Invalid pid!", 11);
+        exit(1);
+    }
+    pid = atoi(s);
+    if(pid <= 0 || pid >= 4194304)
+    {
+        write(2, "Invalid pid!", 11);
+        exit (1);
+    }
+    return (pid);
+}
 int     main(int ac, char **arg)
 {
     if(ac == 3)
     {
-        int pid;
+        
         int i;
+        int pid;
 
-        pid = atoi(arg[1]);
-        if(pid <= 0)
-        {
-            write(2, "wrong pid!", 11);
-            return (1);
-        }
+        pid = pid_controller(arg[1]);
         signal(SIGUSR1, client_handler);
         i = 0;
         while(arg[2][i])
@@ -53,3 +68,4 @@ int     main(int ac, char **arg)
     }
     return (0);
 }
+
