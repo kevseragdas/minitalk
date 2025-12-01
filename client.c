@@ -30,15 +30,15 @@ int     pid_controller(char *s)
     int pid;
 
     basamak = ft_basamak(s);
-    if(basamak > 8)
+    if(basamak > 7)
     {
-        write(2, "Invalid pid!", 11);
+        write(2, "Invalid pid!\n", 14);
         exit(1);
     }
     pid = atoi(s);
     if(pid <= 0 || pid >= 4194304)
     {
-        write(2, "Invalid pid!", 11);
+        write(2, "Invalid pid!\n", 14);
         exit (1);
     }
     return (pid);
@@ -63,7 +63,7 @@ int     main(int ac, char **arg)
     }
     else
     {
-        write(2, "Eksik bilgi girdin!", 20);
+        write(2, "Eksik bilgi girdin\n!", 21);
         return (1);
     }
     return (0);
