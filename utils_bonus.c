@@ -6,11 +6,9 @@
 /*   By: kagdas <kagdas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 17:44:18 by kagdas            #+#    #+#             */
-/*   Updated: 2025/12/03 18:21:00 by kagdas           ###   ########.fr       */
+/*   Updated: 2025/12/03 18:58:53 by kagdas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "minitalk_bonus.h"
 
 int	ft_atoi(const char *nptr)
 {
