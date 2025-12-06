@@ -6,12 +6,14 @@
 /*   By: kagdas <kagdas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 17:43:31 by kagdas            #+#    #+#             */
-/*   Updated: 2025/12/03 17:47:59 by kagdas           ###   ########.fr       */
+/*   Updated: 2025/12/06 13:54:41 by kagdas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #ifndef MINITALK_BONUS_H
 # define MINITALK_BONUS_H
+
 
 # include <unistd.h>
 # include <signal.h>
